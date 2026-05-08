@@ -133,6 +133,9 @@
       <li>Istoricul programărilor și confirmărilor de participare.</li>
     </ul>
     <blockquote><strong>Important:</strong> Documentele medicale stocate în Aplicație sunt create și gestionate exclusiv de cabinetul Operatorului. Nu sunt preluate din alte cabinete și nu sunt transmise către alte cabinete sau sisteme.</blockquote>
+
+    <h3>3.6 Date procesate de Asistentul AI <em>(Categorie specială Articolul 9 din GDPR Regulamentul UE 2016/679)</em></h3>
+    <p>Funcționalitatea de asistent AI procesează, în cadrul fiecărei sesiuni, un extras din profilul și istoricul de ședințe documentate ale Pacientului (nume, vârstă, sex, diagnostic clinic, comorbidități, medic prescriptor, date ședințe, durate, servicii, obiective și mijloace specifice). Aceste date sunt transmise către <strong>Google LLC (Gemini API)</strong> exclusiv în scopul generării răspunsurilor sau textelor îmbunătățite. Sesiunile nu sunt stocate permanent de Furnizor. Utilizarea funcționalității AI este opțională și necesită consimțământul explicit al Pacientului.</p>
   </section>
 
   <hr>
@@ -146,6 +149,7 @@
       <li>Stocarea documentației medicale specifice kinetoterapiei și/sau fizioterapiei.</li>
       <li>Generarea de rapoarte de activitate pentru uzul intern al Operatorului.</li>
       <li>Asigurarea securității și funcționalității Aplicației.</li>
+      <li>Furnizarea funcționalității opționale de asistent AI pentru analiza conversațională a istoricului de ședințe ale Pacientului, exclusiv la inițiativa Utilizatorului sau Pacientului.</li>
     </ul>
   </section>
 
@@ -157,8 +161,7 @@
     <ul>
       <li><strong>Operatorului</strong> și Utilizatorilor autorizați ai Operatorului.</li>
       <li><strong>Furnizorului</strong> (THE KINEDBO SRL), exclusiv în scopuri tehnice de mentenanță și suport.</li>
-      <li><strong>Google LLC</strong> (Firebase/Google Cloud Platform) – în calitate de sub-procesator, pentru stocarea datelor pe servere securizate certificate ISO 27001.</li>
-      <li><strong>Google LLC</strong> (Gemini API / Firebase AI) – în calitate de sub-procesator pentru funcționalitatea opțională de <strong>Asistent AI</strong>, activată exclusiv pe baza consimțământului explicit al utilizatorului. Datele transmise pot include: profilul pacientului (nume, vârstă, sex, diagnostic clinic, comorbidități, medic prescriptor) și istoricul ședințelor de kinetoterapie, exclusiv în scopul generării răspunsurilor AI sau al îmbunătățirii textelor clinice. Google Gemini API nu stochează permanent aceste date după generarea răspunsului. Utilizatorul poate retrage consimțământul oricând din secțiunea <em>Detalii personale</em> din Aplicație.</li>
+      <li><strong>Google LLC</strong> (Firebase/Google Cloud Platform și Gemini API) – în calitate de sub-procesator, pentru stocarea datelor pe servere securizate certificate ISO 27001, precum și pentru procesarea datelor de sesiune în cadrul funcționalității opționale de asistent AI (Gemini API). Gemini API funcționează în conformitate cu politicile de utilizare a datelor Google pentru API-urile AI, disponibile la <a href="https://ai.google.dev/terms" target="_blank">ai.google.dev/terms</a>.</li>
     </ul>
     <p>Datele nu sunt transferate, vândute sau dezvăluite altor terți fără consimțământul explicit al Operatorului.</p>
   </section>
@@ -225,6 +228,23 @@
       <li>Monitorizare și audit al accesului la date.</li>
       <li>Backup automat al datelor prin infrastructura Firebase/Google Cloud.</li>
     </ul>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>9a. Asistentul AI — prelucrarea datelor medicale</h2>
+    <p>Aplicația include o funcționalitate opțională de asistent bazat pe inteligență artificială (AI), accesibilă din istoricul de ședințe. Prin utilizarea acestei funcționalități, Utilizatorul sau Pacientul inițiază în mod explicit o sesiune de conversație AI.</p>
+    <p><strong>Date transmise:</strong> Profilul Pacientului și istoricul de ședințe documentate (date, durate, servicii, obiective/mijloace specifice) sunt incluse în cererea transmisă către Gemini API (Google LLC) ca parte a contextului de sistem al conversației.</p>
+    <p><strong>Temei legal:</strong> Articolul 9 alineatul (2) litera (h) din GDPR Regulamentul UE 2016/679 — prelucrare în scopul furnizării asistenței în domeniul sănătății, combinat cu consimțământul explicit al persoanei vizate la inițierea sesiunii AI.</p>
+    <p><strong>Limitări importante:</strong></p>
+    <ul>
+      <li>Răspunsurile generate de AI sunt <strong>exclusiv informative</strong> și <strong>nu constituie sfaturi medicale, diagnostic sau recomandări terapeutice</strong>.</li>
+      <li>Conversațiile nu sunt stocate permanent de Furnizor și nu se integrează în dosarul medical al Pacientului.</li>
+      <li>Sesiunile AI sunt izolate per utilizator autentificat — datele unui Pacient nu sunt accesibile altor Pacienți.</li>
+      <li>Utilizarea funcționalității AI este <strong>opțională</strong>. Neutilizarea acesteia nu afectează niciun alt drept sau serviciu al Pacientului.</li>
+    </ul>
+    <p><strong>Sub-procesator AI:</strong> Google LLC (Gemini API) procesează datele transmise conform propriilor politici de confidențialitate și acordurilor de sub-procesare aplicabile serviciilor Firebase/Google Cloud, care includ angajamente de conformitate GDPR.</p>
   </section>
 
   <hr>
